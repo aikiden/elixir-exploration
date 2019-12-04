@@ -20,12 +20,7 @@ defmodule RnaTranscriptionTest do
   test "transcribes adenine to uracil" do
     assert RnaTranscription.to_rna('A') == 'U'
   end
-  @tag :pending
-
-  test "no value entered give prompt" do
-    assert RnaTranscription.to_rna('') == ""
-  end
-
+  
   @tag :pending
   test "it transcribes all dna nucleotides to rna equivalents" do
    assert RnaTranscription.to_rna('ACGTGGTCTTAA') == 'UGCACCAGAAUU'
